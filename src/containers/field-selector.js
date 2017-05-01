@@ -24,7 +24,6 @@ class FieldSelectorDropdown extends Component {
   }
 
   handleChange(event, index, value) {
-    console.log('Calling handleChange');
     this.props.setSelectedField({key: value, value: this.props.columns[value]});
     this.props.fetchCensusData(this.props.columns[value]);
   }
